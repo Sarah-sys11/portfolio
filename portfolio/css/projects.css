@@ -1,0 +1,303 @@
+body{
+    overflow-x: hidden;
+}
+
+.VAG-logo{
+    height: 4em;
+    float: right;
+}
+
+/*background video*/
+.project-background{
+    width: 100%;
+    height: 35em;
+}
+.project-video{
+    margin-top: 3em;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.VAG-header{
+    display: flex;
+    height: 25em;
+    margin-top: -20em;
+    margin-left: 5%;
+    position: relative;
+}
+.VAG-header-img{
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width: 720px) {
+    .VAG-header{
+        margin-top: -20em;
+        margin-left: -3em;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*title*/
+.VAG-title{
+    float: right;
+    position: absolute;
+    z-index: 1;
+    margin-left: 50%;
+    margin-top: -15em;
+}
+.Community-E{
+    font-size: xx-large;
+}
+@media screen and (max-width: 1200px) {
+    .VAG-title{
+        float: left;
+        margin-left: 0;
+        margin-top: 3em;
+    }
+    .intro{
+        margin-top: 13em;
+    }
+    .pd-row{
+        flex-direction: column;
+    }
+    .VAG-map-container{
+        width: 100%; /* Set the container width to occupy the entire available width */
+        max-height: 80vh; /* Set the maximum height for smaller screens */
+        overflow-y: scroll;   
+    }
+    .VAG-map{
+        width: 100%; /* Make the image width 100% of its container */
+        height: auto;  
+    }
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+}
+.basic-info, .overview{
+    flex: 1;
+    padding: 3em;
+}
+
+
+.persona-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pd-row{
+    flex: 1;
+    display: flex;
+}
+.pd-r{
+    flex: 1;
+}
+.persona-img{
+    width: 20em;
+    padding: 3em;
+    transition: transform 0.4s ease;
+}
+.persona-img:hover{
+    transform: scale(1.1);
+}
+
+.VAG-map{
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    transition: transform 0.4s ease;
+}
+.VAG-map:hover{
+    transform: scale(1.07);
+}
+
+/* scrollable gallery */
+.gallery-container {
+    width: calc(100% - 10em); /*https://developer.mozilla.org/en-US/docs/Web/CSS/calc*/
+    margin: 0 5em;
+    overflow-x: scroll;
+    margin-top: 3em;
+    padding-bottom: 2em;
+}
+.gallery-wrapper {
+    display: flex;
+}
+.gallery-img {
+    width: 30em;
+    margin-right: 2em;
+    transition: transform 0.3s ease;
+}
+.gallery-img:last-child {
+    padding-right: 0;
+    margin-right: 0;
+}
+/* Smooth scrolling behavior */
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar*/
+.gallery-container::-webkit-scrollbar {
+    height: 0.5em;
+}
+  
+.gallery-container::-webkit-scrollbar-track {
+    background: white;
+}
+  
+.gallery-container::-webkit-scrollbar-thumb {
+    background: #FD5342;
+}
+  
+.gallery-container::-webkit-scrollbar-thumb:hover {
+    background: #FD5342;
+}
+
+.prototype{
+    display: flex;
+    margin-top: 3em;
+}
+.prototype-col{
+    flex: 1;
+}
+.prototype-img{
+    width: 15em;
+    transition: transform 0.4s ease;
+}
+.prototype-img:hover{
+    transform: scale(1.2);
+}
+
+.VAG-final-mockup-div{
+    display: flex;
+    flex-direction: row;
+}
+.VAG-final-mockup{
+    width: 18em;
+    margin: 1em;
+    transition: transform 0.4s ease;
+
+}
+.VAG-final-mockup:hover{
+    transform: scale(1.5);
+}
+
+.VAG-final-video{
+    width: 100%;
+}
+
+
+
+
+/**/
+.FH-header{
+    display: flex;
+    height: 25em;
+    margin-top: -25em;
+    margin-left: 5%;
+    position: relative;
+}
+.FH-header-img{
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width: 720px) {
+    .FH-header{
+        margin-top: -20em;
+        margin-left: -3em;
+    }
+}
+
+/*title*/
+.FH-title{
+    float: right;
+    position: absolute;
+    z-index: 1;
+    margin-left: 50%;
+    margin-top: -15em;
+}
+.Community-E{
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 1200px) {
+    .FH-title{
+        float: left;
+        margin-left: 0;
+        margin-top: 3em;
+    }
+    .FH-intro{
+        margin-top: 13em;
+    }
+    
+}
+
+.FH-intro{
+    display: flex;
+    flex-direction: row;
+}
+.basic-info, .overview{
+    flex: 1;
+    padding: 3em;
+}
+
+
+
+
+.FH-image{
+    width: 100%;
+    height: auto;
+}
+.FH-webpage{
+    display: flex;
+    flex-direction: row;
+}
+.FH-d-page{
+    flex: 1;
+    padding: 1em;
+}
+.FH-m-page{
+    flex: 0.5;
+    padding: 1em;
+}
+
+
+
+/* styles.css */
+.FH-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    width: 49%;
+    margin-bottom: 1em;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.video-item {
+    width: 49%;
+    margin-bottom: 1em;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+}
